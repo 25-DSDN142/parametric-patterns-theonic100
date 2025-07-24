@@ -19,7 +19,7 @@ var sw = 1
 
 function setup_wallpaper(pWallpaper) {
  pWallpaper.output_mode(DEVELOP_GLYPH);
-  //pWallpaper.output_mode(GRID_WALLPAPER);
+ // pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
@@ -31,12 +31,49 @@ function setup_wallpaper(pWallpaper) {
 }
 
 function wallpaper_background() {
- background(34, 12, 237, 50); //light orange background
+ //background(34, 12, 237, 50); //light orange background
+ background(0,0,0,55)
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
 //centre lines
+fill(247,107,7)
+strokeWeight(0)
+triangle(100,100,200,75,200,100)
+
+fill(247,107,7,55)
+strokeWeight(0)
+triangle(100,100,200,50,200,75)
+
+fill(247,107,7)
+strokeWeight(0)
+triangle(100,100,200,25,200,50)
+
+fill(247,107,7,55)
+strokeWeight(0)
+triangle(100,100,200,0,200,25)
+
+fill(247,107,7)
+strokeWeight(0)
+triangle(100,100,175,0,200,0)
+
+fill(247,107,7,55)
+strokeWeight(0)
+triangle(100,100,150,0,175,0)
+
+fill(247,107,7)
+strokeWeight(0)
+triangle(100,100,150,0,125,0)
+
+fill(247,107,7,55)
+strokeWeight(0)
+triangle(100,100,100,0,125,0)
+
+fill(247,107,7)
+strokeWeight(0)
+triangle(100,100,100,0,75,0)
+
 fill(247, 107, 7,55)
 strokeWeight(0)
 triangle(100,100,50,0,75,0)
@@ -64,6 +101,11 @@ triangle(100,100,0,75,0,50)
 fill(247,107,7,55)
 strokeWeight(0)
 triangle(100,100,0,100,0,75)
+
+//rect
+fill(72, 105, 37)
+rect(0,100,200,100)
+
   //L-R Cross
 stroke(247, 7, 7)
 strokeWeight(sw)
@@ -148,8 +190,8 @@ strokeWeight(0)
   rect(85,25,30,150)
   rect(55,45,90,30)
 
-  // bleft lines
-  stroke(43, 7, 247)
+//   // bleft lines
+   stroke(43, 7, 247)
   strokeWeight(sw+1)
   line(0,180,80,180)//horz
   line(20,130,20,200)//vert
