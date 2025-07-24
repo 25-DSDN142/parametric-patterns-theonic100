@@ -18,8 +18,8 @@ var sw = 1
 //  var sw = 1;
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(DEVELOP_GLYPH);
- // pWallpaper.output_mode(GRID_WALLPAPER);
+ pWallpaper.output_mode(DEVELOP_GLYPH);
+  //pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
@@ -65,7 +65,7 @@ fill(247,107,7,55)
 strokeWeight(0)
 triangle(100,100,0,100,0,75)
   //L-R Cross
-stroke(11, 247, 7)
+stroke(247, 7, 7)
 strokeWeight(sw)
 line(hx1,hy1,hx2,hy2)//horz
 line(vx1,vy1,vx2,vy2)//vert
