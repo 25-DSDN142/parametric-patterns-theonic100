@@ -55,9 +55,13 @@ triangle(100,100,0,25,0,0)
 
 fill(247,107,7,55)
 strokeWeight(0)
-triangle(100,100,0,75,0,25)
+triangle(100,100,0,50,0,25)
 
 fill(247,107,7)
+strokeWeight(0)
+triangle(100,100,0,75,0,50)
+
+fill(247,107,7,55)
 strokeWeight(0)
 triangle(100,100,0,100,0,75)
   //L-R Cross
