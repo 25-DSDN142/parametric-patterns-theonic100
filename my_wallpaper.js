@@ -1,4 +1,5 @@
 //your parameter variables go here!
+//lrcrosses
 var hx1 = 0
 var hy1 = 10
 var hx2 = 20
@@ -7,7 +8,16 @@ var vx1 = 10
 var vy1 = 0
 var vx2 = 10 
 var vy2 = 40
-var sw = 1 
+var sw = 2
+//centre cross
+var r1x = 85
+var r1y = 25
+var r2x = 55
+var r2y = 45
+
+//sunrays
+var line = 100
+
 
 
 
@@ -18,7 +28,7 @@ var sw = 1
 //  var sw = 1;
 
 function setup_wallpaper(pWallpaper) {
- pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(DEVELOP_GLYPH);
  // pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
@@ -37,76 +47,79 @@ function wallpaper_background() {
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
 
+  //rect
+  strokeWeight(0)
+fill(72, 105, 37);
+rect(0,100,200,100);
+
 //centre lines
-fill(247,107,7)
-strokeWeight(0)
-triangle(100,100,200,75,200,100)
+fill(247,107,7);
+strokeWeight(0);
+triangle(100,100,200,75,200,100);
 
-fill(247,107,7,55)
-strokeWeight(0)
-triangle(100,100,200,50,200,75)
+fill(247,107,7,55);
+strokeWeight(0);
+triangle(100,100,200,50,200,75);
 
-fill(247,107,7)
-strokeWeight(0)
-triangle(100,100,200,25,200,50)
+fill(247,107,7);
+strokeWeight(0);
+triangle(100,100,200,25,200,50);
 
-fill(247,107,7,55)
-strokeWeight(0)
-triangle(100,100,200,0,200,25)
+fill(247,107,7,55);
+strokeWeight(0);
+triangle(100,100,200,0,200,25);
 
-fill(247,107,7)
-strokeWeight(0)
-triangle(100,100,175,0,200,0)
+fill(247,107,7);
+strokeWeight(0);
+triangle(100,100,175,0,200,0);
 
-fill(247,107,7,55)
-strokeWeight(0)
-triangle(100,100,150,0,175,0)
+fill(247,107,7,55);
+strokeWeight(0);
+triangle(100,100,150,0,175,0);
 
-fill(247,107,7)
-strokeWeight(0)
-triangle(100,100,150,0,125,0)
+fill(247,107,7);
+strokeWeight(0);
+triangle(100,100,150,0,125,0);
 
-fill(247,107,7,55)
-strokeWeight(0)
-triangle(100,100,100,0,125,0)
+fill(247,107,7,55);
+strokeWeight(0);
+triangle(100,100,100,0,125,0);
 
-fill(247,107,7)
-strokeWeight(0)
-triangle(100,100,100,0,75,0)
+fill(247,107,7);
+strokeWeight(0);
+triangle(100,100,100,0,75,0);
 
-fill(247, 107, 7,55)
-strokeWeight(0)
-triangle(100,100,50,0,75,0)
+fill(247, 107, 7,55);
+strokeWeight(0);
+triangle(100,100,50,0,75,0);
 
-fill(247,107,7)
-strokeWeight(0)
-triangle(100,100,25,0,50,0)
+fill(247,107,7);
+strokeWeight(0);
+triangle(100,100,25,0,50,0);
 
-fill(247,107,7,55)
-strokeWeight(0)
-triangle(100,100,0,0,25,0)
+fill(247,107,7,55);
+strokeWeight(0);
+triangle(100,100,0,0,25,0);
 
-fill(247,107,7)
-strokeWeight(0)
-triangle(100,100,0,25,0,0)
+fill(247,107,7);
+strokeWeight(0);
+triangle(100,100,0,25,0,0);
 
-fill(247,107,7,55)
-strokeWeight(0)
-triangle(100,100,0,50,0,25)
+fill(247,107,7,55);
+strokeWeight(0);
+triangle(100,100,0,50,0,25);
 
-fill(247,107,7)
-strokeWeight(0)
-triangle(100,100,0,75,0,50)
+fill(247,107,7);
+strokeWeight(0);
+triangle(100,100,0,75,0,50);
 
-fill(247,107,7,55)
-strokeWeight(0)
-triangle(100,100,0,100,0,75)
+fill(247,107,7,55);
+strokeWeight(0);
+triangle(100,100,0,100,0,75);
 
-//rect
-fill(72, 105, 37)
-rect(0,100,200,100)
 
-  //L-R Cross
+
+   //L-R Cross
 stroke(247, 7, 7)
 strokeWeight(sw)
 line(hx1,hy1,hx2,hy2)//horz
@@ -184,97 +197,36 @@ strokeWeight(sw)
 line(hx1+180,hy1+180,hx2+180,hy2+180)//horz
 line(vx1+180,vy1+180,vx2+180,vy2+180)//vert
 
+
+
 //centre cross
-  fill(237, 12, 94)
-strokeWeight(0)
-  rect(85,25,30,150)
-  rect(55,45,90,30)
+  fill(237, 12, 94);
+strokeWeight(0);
+  rect(r1x,r1y,30,150);//vert
+  rect(r2x,r2y,90,30);//horz;
+
+strokeWeight(0);
+  rect(r1x,r1y,30,150);//vert
+  rect(r2x,r2y,90,30);//horz;
+  
+
+
+ 
 
 //   // bleft lines
-   stroke(43, 7, 247)
-  strokeWeight(sw+1)
-  line(0,180,80,180)//horz
-  line(20,130,20,200)//vert
+//    stroke(43, 7, 247)
+//   strokeWeight(sw-1)
+//   line(0,180,80,180)//horz
+//   line(20,130,20,200)//vert
 
-  // tright lines
-  stroke(43, 7, 247)
-  strokeWeight(sw+1)
- line(120,20,200,20)//horz
-line(180,0,180,80)
+//   // tright lines
+//   stroke(43, 7, 247)
+//   strokeWeight(sw-1)
+//  line(120,20,200,20)//horz
+// line(180,0,180,80)
 
 
 }
 
 
 
-
-//  function fourCross (){
-
-//  stroke(237, 12, 94);pink
-//  strokeWeight(sw-1);
-//  line(hx-10,hy-10,hx+10,hy-10)//horizontal
-//  line(vx-10,vy-10,vx-10,vy+35)//vert
-
-//     //stroke(237, 12, 94);
-//  strokeWeight(sw);
-//  line(hx,hy,hx+20,hy)//horizontal
-//  line(vx,vy,vx,vy+45)//vert
-
-
-// //stroke(237, 12, 94);
-//  strokeWeight(sw+1);
-//  line(hx+10, hy+10,hx+30, hy+10)//horizontal
-//  line(vx+10,vy+10,vx+10,vy+55)//vert
-
-// //stroke(237, 12, 94);
-//  strokeWeight(sw+2);
-//  line(hx+20,hy+20,hx+40,hy+20)//horizontal
-//  line(vx+20,vy+20,vx+20,vy+65)//vert
- 
-//  //stroke(237, 12, 94);
-//  strokeWeight(sw+3);
-//  line(hx+30,hy+30,hx+50,hy+30)//horizontal
-//  line(vx+30,vy+30,vx+30,vy+75)//vert
-//  }
-
-// crosses 
-// stroke(237, 12, 94);//pink
-// strokeWeight(sw);
-//  line(hx-40,hy-40,hx-20,hy-40)//horizontal
-//  line(vx-40,vy-40,vx-40,vy+5)//vert
-
-//       stroke(237, 12, 94);//pink
-// strokeWeight(sw);
-//  line(hx-30,hy-30,hx-10,hy-30)//horizontal
-//  line(vx-30,vy-30,vx-30,vy+15)//vert
-
-//     stroke(237, 12, 94);//pink
-// strokeWeight(sw);
-//  line(hx-20,hy-20,hx,hy-20)//horizontal
-//  line(vx-20,vy-20,vx-20,vy+25)//vert
-
-//   stroke(237, 12, 94);//pink
-// strokeWeight(sw);
-//  line(hx-10,hy-10,hx+10,hy-10)//horizontal
-//  line(vx-10,vy-10,vx-10,vy+35)//vert
-
-//  stroke(237, 12, 94);
-//  strokeWeight(sw);
-//  line(hx,hy,hx+20,hy)//horizontal
-//  line(vx,vy,vx,vy+45)//vert
-
-
-// stroke(237, 12, 94);
-//  strokeWeight(sw);
-//  line(hx+10, hy+10,hx+30, hy+10)//horizontal
-//  line(vx+10,vy+10,vx+10,vy+55)//vert
-
-// stroke(237, 12, 94);
-//  strokeWeight(sw);
-//  line(hx+20,hy+20,hx+40,hy+20)//horizontal
-//  line(vx+20,vy+20,vx+20,vy+65)//vert
- 
-//  stroke(237, 12, 94);
-//  strokeWeight(sw);
-//  line(hx+30,hy+30,hx+50,hy+30)//horizontal
-//  line(vx+30,vy+30,vx+30,vy+75)//vert
