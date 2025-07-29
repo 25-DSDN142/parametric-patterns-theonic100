@@ -9,7 +9,7 @@ var alllines1 = 100
 var alllines = 100
 
 //triangles small pink
-var trianglex = 76
+var trianglex = 75
 var triangley = 50
 
 //triangle big pink
@@ -19,19 +19,13 @@ var tpinky = 20
 //circles 
 var circlex = 50
 var circley = 50
-var circlesize = 49
-
-// triangles bpink
-
-
- 
-
+var circlesize = 50
 
 
 
 function setup_wallpaper(pWallpaper) {
-//  pWallpaper.output_mode(DEVELOP_GLYPH);
-pWallpaper.output_mode(GRID_WALLPAPER);
+ pWallpaper.output_mode(DEVELOP_GLYPH);
+//pWallpaper.output_mode(GRID_WALLPAPER);
   
   pWallpaper.resolution(FIT_TO_SCREEN);
   pWallpaper.show_guide(true); //set this to false when you're ready to print
@@ -43,11 +37,10 @@ pWallpaper.output_mode(GRID_WALLPAPER);
 }
 
 function wallpaper_background() {
- //background(34, 12, 237, 50); //light orange background
- background(255)
+ background(255)//white
  if(circlesize>50){
- background(252, 130, 0)}
- if(circlesize<50){background(0, 252, 239,opa)}
+ background(252, 130, 0)}//burnt orange background
+ if(circlesize<50){background(252, 0, 0,opa+15)}//light pink background
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
