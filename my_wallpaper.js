@@ -41,7 +41,7 @@ function setup_wallpaper(pWallpaper) {
 
 function wallpaper_background() {
  //background(34, 12, 237, 50); //light orange background
- background(0,0,0,55)
+ background(255,255,255)
 }
 
 function my_symbol() { // do not rename this function. Treat this similarly to a Draw function
@@ -181,16 +181,16 @@ fill(247,107,7,opa);
 strokeWeight(0);
 triangle(alllines+100,alllines+100,alllines+175,alllines+200,alllines+200,alllines+200);
 
-fill(239, 245, 66,opa);
+fill(239, 245, 66,otri);
 if (circlesize > 50){ 
   fill(29, 7, 227)}
 
 //circle
 strokeWeight(0); 
 //fill(239, 245, 66, otri+5);
-circle(circlex,circley,circlesize);
-circle(circlex+50,circley+50,circlesize);
-circle(circlex+100,circley+100,circlesize);
+circle(circlex,circley,circlesize);//tri1
+circle(circlex+50,circley+50,circlesize);//tri2
+circle(circlex+100,circley+100,circlesize);//tri3
 
 // triangle small pink
 fill(247, 5, 183, otri);
