@@ -9,7 +9,7 @@ var alllines1 = 100
 var alllines = 100
 
 //triangles small pink
-var trianglex = 75
+var trianglex = 76
 var triangley = 50
 
 //triangle big pink
@@ -19,7 +19,7 @@ var tpinky = 20
 //circles 
 var circlex = 50
 var circley = 50
-var circlesize = 50
+var circlesize = 49
 
 // triangles bpink
 
