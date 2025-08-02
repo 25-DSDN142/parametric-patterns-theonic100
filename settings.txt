@@ -9,70 +9,124 @@ Your final settings.txt will look something like this when you are finished:
 
 Wallpaper 1:
 
-//your parameter variables go here!
-let rect_width  = 20;
-let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+///your parameter variables go here!
+
+//opacity 
+var opa = 80
+var otri = 100
+
+// centre lines
+var alllines1 = 100
+var alllines = 100
+
+//triangles small pink
+var trianglex = 75
+var triangley = 50
+
+//triangle big pink
+var tpinkx = 20
+var tpinky = 20
+
+//circles 
+var circlex = 50
+var circley = 50
+var circlesize = 50
+
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+// pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
-}
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+  }
 
 /////////////////////////////////
 
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+//opacity 
+var opa = 80
+var otri = 100
+
+// centre lines
+var alllines1 = 100
+var alllines = 100
+
+//triangles small pink
+var trianglex = 75
+var triangley = 50
+
+//triangle big pink
+var tpinkx = 20
+var tpinky = 20
+
+//circles 
+var circlex = 50
+var circley = 50
+var circlesize = 51
+
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+// pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
+
 }
 /////////////////////////////////
 
 Wallpaper 3:
-
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+//opacity 
+var opa = 80
+var otri = 100
+
+// centre lines
+var alllines1 = 100
+var alllines = 100
+
+//triangles small pink
+var trianglex = 75
+var triangley = 50
+
+//triangle big pink
+var tpinkx = 20
+var tpinky = 20
+
+//circles 
+var circlex = 50
+var circley = 50
+var circlesize = 48
+
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+// pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
 
@@ -81,115 +135,205 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 4:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+//opacity 
+var opa = 80
+var otri = 100
+
+// centre lines
+var alllines1 = 100
+var alllines = 100
+
+//triangles small pink
+var trianglex = 75
+var triangley = 50
+
+//triangle big pink
+var tpinkx = 20
+var tpinky = 20
+
+//circles 
+var circlex = 50
+var circley = 50
+var circlesize = 56
+
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+// pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
 
 /////////////////////////////////
 
 Wallpaper 5:
-
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+//opacity 
+var opa = 80
+var otri = 100
+
+// centre lines
+var alllines1 = 100
+var alllines = 100
+
+//triangles small pink
+var trianglex = 76
+var triangley = 50
+
+//triangle big pink
+var tpinkx = 20
+var tpinky = 20
+
+//circles 
+var circlex = 50
+var circley = 50
+var circlesize = 50
+
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+// pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
 
 /////////////////////////////////
 
 Wallpaper 6:
-
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+//opacity 
+var opa = 80
+var otri = 100
+
+// centre lines
+var alllines1 = 100
+var alllines = 100
+
+//triangles small pink
+var trianglex = 75
+var triangley = 50
+
+//triangle big pink
+var tpinkx = 20
+var tpinky = 20
+
+//circles 
+var circlex = 50
+var circley = 50
+var circlesize = 49
+
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+// pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
-}/////////////////////////////////
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 100;
+
+}
+
+/////////////////////////////////
 
 Wallpaper 7:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+//opacity 
+var opa = 0
+var otri = 100
+
+// centre lines
+var alllines1 = 100
+var alllines = 100
+
+//triangles small pink
+var trianglex = 75
+var triangley = 50
+
+//triangle big pink
+var tpinkx = 20
+var tpinky = 20
+
+//circles 
+var circlex = 50
+var circley = 50
+var circlesize = 50
+
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+// pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
 /////////////////////////////////
 
 Wallpaper 8:
-
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+
+//opacity 
+var opa = 80
+var otri = 0
+
+// centre lines
+var alllines1 = 100
+var alllines = 100
+
+//triangles small pink
+var trianglex = 75
+var triangley = 50
+
+//triangle big pink
+var tpinkx = 20
+var tpinky = 20
+
+//circles 
+var circlex = 50
+var circley = 50
+var circlesize = 50
+
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+// pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(GLIDE_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
 
@@ -197,22 +341,40 @@ function setup_wallpaper(pWallpaper) {
 
 Wallpaper 9:
 
-//your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+///your parameter variables go here!
+
+//opacity 
+var opa = 80
+var otri = 100
+
+// centre lines
+var alllines1 = 100
+var alllines = 100
+
+//triangles small pink
+var trianglex = 76
+var triangley = 50
+
+//triangle big pink
+var tpinkx = 20
+var tpinky = 20
+
+//circles 
+var circlex = 50
+var circley = 50
+var circlesize = 56
+
+
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+// pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(GRID_WALLPAPER);
+  
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 0;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 50;
 }

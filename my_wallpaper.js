@@ -1,7 +1,7 @@
 //your parameter variables go here!
 
 //opacity 
-var opa = 55
+var opa = 80
 var otri = 100
 
 // centre lines
@@ -24,10 +24,10 @@ var circlesize = 50
 
 
 function setup_wallpaper(pWallpaper) {
- pWallpaper.output_mode(DEVELOP_GLYPH);
-//pWallpaper.output_mode(GLIDE_WALLPAPER);
+// pWallpaper.output_mode(DEVELOP_GLYPH);
+pWallpaper.output_mode(GLIDE_WALLPAPER);
   
-  pWallpaper.resolution(FIT_TO_SCREEN);
+  pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
@@ -149,7 +149,7 @@ if (trianglex > 75) {
   line(100,0,100,200);// vert line
   line(0,100,200,100)
  
-}else{fill(255, 0, 0, 90);
+}else{fill(247, 5, 183, otri);
   //triangle small pink 
 strokeWeight(0);
 triangle(trianglex+25,triangley+25,trianglex,triangley,trianglex+50,triangley);//top
